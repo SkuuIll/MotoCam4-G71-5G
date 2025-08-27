@@ -73,7 +73,7 @@ su -c 'sh /data/adb/modules/MotoCam4G715G/fix_camera.sh'
 
 ### 🤝 **Contribuciones**
 Si encuentras problemas o mejoras:
-- Reportar issues con logs detallados
+- Reportar issues con logs detallados en: https://github.com/SkuuIll/MotoCam4_G71_5G
 - Sugerir mejoras en la compatibilidad
 - Compartir resultados de pruebas
 
