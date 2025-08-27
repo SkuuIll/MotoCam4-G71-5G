@@ -6,7 +6,7 @@
 - Módulo Magisk completo para Moto G71 5G
 - Cámara Motorola original (9.0.33.40) con todas las funcionalidades
 - Soporte para 4 sensores: Principal 50MP, Frontal 16MP, Ultra Gran Angular 8MP, Macro 2MP
-- Modos avanzados: Nocturno, Retrato, Macro, Ultra Gran Angular, Video 4K
+- Modos avanzados: Nocturno, Retrato, Macro, Ultra Gran Angular, Video 1080p
 - IA integrada para procesamiento inteligente de imagen
 - Editor MotoPhotoEditor incluido
 - Scripts de instalación y reparación automática
