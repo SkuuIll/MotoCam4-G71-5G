@@ -96,7 +96,7 @@ su -c 'sh /data/adb/modules/MotoCam4G715G/tests/run_all_tests.sh'
 ## 🤝 **Contribuciones**
 
 Si encuentras problemas o mejoras, puedes:
-- Reportar issues con logs detallados en: https://github.com/SkuuIll/MotoCam4_G71_5G
+- Reportar issues con logs detallados en: [https://github.com/SkuuIll/MotoCam4_G71_5G](https://github.com/SkuuIll/MotoCam4-G71-5G/issues)
 - Sugerir mejoras en la compatibilidad
 - Compartir resultados de pruebas
 
