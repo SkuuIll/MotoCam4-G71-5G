@@ -6,7 +6,7 @@ Módulo Magisk que instala la cámara Motorola original (9.0.33.40) en el Moto G
 
 - ✅ **Cámara Motorola Original** (9.0.33.40) completa y funcional
 - ✅ **4 Sensores Activos:** Principal 50MP + Frontal 16MP + Ultra Gran Angular 8MP + Macro 2MP
-- ✅ **Modos Avanzados:** Nocturno, Retrato, Macro, Ultra Gran Angular, Video 4K@30fps
+- ✅ **Modos Avanzados:** Nocturno, Retrato, Macro, Ultra Gran Angular, Video 1080p@60fps
 - ✅ **IA Integrada:** Procesamiento inteligente de imagen y reconocimiento de escenas
 - ✅ **Editor Incluido:** MotoPhotoEditor con filtros profesionales y herramientas avanzadas
 - ✅ **Optimizado para SM6375** (Snapdragon 695 5G) y GPU Adreno 619
@@ -86,7 +86,7 @@ su -c 'sh /data/adb/modules/MotoCam4G715G/tests/run_all_tests.sh'
 ## 📸 **Funcionalidades Verificadas**
 
 - ✅ Captura de fotos en todos los sensores
-- ✅ Grabación de video 4K y 1080p
+- ✅ Grabación de video 1080p
 - ✅ Modo nocturno con procesamiento IA
 - ✅ Modo retrato con desenfoque
 - ✅ Ultra gran angular funcional
