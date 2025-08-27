@@ -31,7 +31,7 @@ Módulo Magisk que instala la cámara Motorola original (9.0.33.40) en el Moto G
 
 ### **Pasos de Instalación:**
 
-1. **Descargar** el archivo `MotoCam4_G71_5G_FIXED_FINAL.zip`
+1. **Descargar** el archivo `MotoCam4_G71_5G.zip`
 2. **Abrir Magisk Manager** en tu dispositivo
 3. **Instalar** → Seleccionar el archivo ZIP descargado
 4. **Reiniciar** el dispositivo completamente
