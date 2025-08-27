@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Night mode configuration optimized for Moto G71 5G -->
+<NightModeConfiguration>
+    
+    <!-- Main Camera Night Mode - Samsung JN1 50MP -->
+    <CameraNightMode camera_id="0" sensor="samsung_jn1">
+        <ExposureSettings>
+            <MaxExposureTime>4000000</MaxExposureTime> <!-- 4 seconds -->
+            <MinExposureTime>100000</MinExposureTime>  <!-- 0.1 seconds -->
+            <OptimalExposureTime>1000000</OptimalExposureTime> <!-- 1 second -->
+            <ExposureSteps>8</ExposureSteps>
+        </ExposureSettings>
+        
+        <ISOSettings>
+            <MaxISO>6400</MaxISO>
+            <MinISO>100</MinISO>
+            <OptimalISO>1600</OptimalISO>
+            <NoiseThreshold>3200</NoiseThreshold>
+        </ISOSettings>
+        
+        <ImageProcessing>
+            <MultiFrameCapture>
+                <FrameCount>8</FrameCount>
+                <AlignmentMethod>optical_flow</AlignmentMethod>
+                <MergingAlgorithm>weighted_average</MergingAlgorithm>
+            </MultiFrameCapture>
+            
+            <NoiseReduction>
+                <Algorithm>bilateral_filter</Algorithm>
+                <Strength>aggressive</Strength>
+                <PreserveDetails>true</PreserveDetails>
+                <ChromaDenoising>enabled</ChromaDenoising>
+            </NoiseReduction>
+            
+            <ToneMapping>
+                <Method>adaptive_histogram</Method>
+                <LocalContrast>enhanced</LocalContrast>
+                <ShadowBoost>moderate</ShadowBoost>
+                <HighlightRecovery>enabled</HighlightRecovery>
+            </ToneMapping>
+            
+            <ColorEnhancement>
+                <Saturation>1.2</Saturation>
+                <Vibrance>1.1</Vibrance>
+                <WarmthAdjustment>subtle</WarmthAdjustment>
+            </ColorEnhancement>
+        </ImageProcessing>
+        
+        <OpticalImageStabilization>
+            <Enabled>true</Enabled>
+            <CompensationLevel>high</CompensationLevel>
+            <GyroSensitivity>enhanced</GyroSensitivity>
+        </OpticalImageStabilization>
+        
+        <AutoFocus>
+            <LowLightMode>enabled</LowLightMode>
+            <AssistLight>infrared</AssistLight>
+            <FocusStacking>enabled</FocusStacking>
+        </AutoFocus>
+    </CameraNightMode>
+    
+    <!-- Front Camera Night Mode - Samsung S5K3P9 16MP -->
+    <CameraNightMode camera_id="1" sensor="samsung_s5k3p9">
+        <ExposureSettings>
+            <MaxExposureTime>2000000</MaxExposureTime> <!-- 2 seconds -->
+            <MinExposureTime>100000</MinExposureTime>
+            <OptimalExposureTime>500000</OptimalExposureTime>
+            <ExposureSteps>6</ExposureSteps>
+        </ExposureSettings>
+        
+        <ISOSettings>
+            <MaxISO>3200</MaxISO>
+            <MinISO>100</MinISO>
+            <OptimalISO>800</OptimalISO>
+            <NoiseThreshold>1600</NoiseThreshold>
+        </ISOSettings>
+        
+        <ImageProcessing>
+            <MultiFrameCapture>
+                <FrameCount>6</FrameCount>
+                <AlignmentMethod>feature_matching</AlignmentMethod>
+                <MergingAlgorithm>exposure_fusion</MergingAlgorithm>
+            </MultiFrameCapture>
+            
+            <NoiseReduction>
+                <Algorithm>non_local_means</Algorithm>
+                <Strength>moderate</Strength>
+                <PreserveDetails>true</PreserveDetails>
+            </NoiseReduction>
+            
+            <FaceEnhancement>
+                <SkinSmoothing>adaptive</SkinSmoothing>
+                <EyeBrightening>enabled</EyeBrightening>
+                <FaceIllumination>soft</FaceIllumination>
+            </FaceEnhancement>
+        </ImageProcessing>
+    </CameraNightMode>
+    
+    <!-- Ultra Wide Night Mode - OmniVision OV8856 8MP -->
+    <CameraNightMode camera_id="2" sensor="omnivision_ov8856">
+        <ExposureSettings>
+            <MaxExposureTime>3000000</MaxExposureTime>
+            <MinExposureTime>100000</MinExposureTime>
+            <OptimalExposureTime>800000</OptimalExposureTime>
+            <ExposureSteps>6</ExposureSteps>
+        </ExposureSettings>
+        
+        <ISOSettings>
+            <MaxISO>3200</MaxISO>
+            <MinISO>100</MinISO>
+            <OptimalISO>1200</OptimalISO>
+            <NoiseThreshold>2000</NoiseThreshold>
+        </ISOSettings>
+        
+        <ImageProcessing>
+            <MultiFrameCapture>
+                <FrameCount>6</FrameCount>
+                <AlignmentMethod>homography</AlignmentMethod>
+                <MergingAlgorithm>pyramid_blending</MergingAlgorithm>
+            </MultiFrameCapture>
+            
+            <DistortionCorrection>
+                <NightModeOptimized>true</NightModeOptimized>
+                <EdgePreservation>enhanced</EdgePreservation>
+            </DistortionCorrection>
+            
+            <NoiseReduction>
+                <Algorithm>wavelet_denoising</Algorithm>
+                <Strength>aggressive</Strength>
+                <EdgePreservation>high</EdgePreservation>
+            </NoiseReduction>
+        </ImageProcessing>
+    </CameraNightMode>
+    
+    <!-- Global Night Mode Settings -->
+    <GlobalNightModeSettings>
+        <AutoDetection>
+            <LuxThreshold>10</LuxThreshold>
+            <SceneAnalysis>enabled</SceneAnalysis>
+            <MotionDetection>enabled</MotionDetection>
+        </AutoDetection>
+        
+        <ProcessingOptimization>
+            <GPUAcceleration>Adreno619</GPUAcceleration>
+            <DSPProcessing>Hexagon685</DSPProcessing>
+            <ParallelProcessing>enabled</ParallelProcessing>
+            <MemoryOptimization>aggressive</MemoryOptimization>
+        </ProcessingOptimization>
+        
+        <UserInterface>
+            <CaptureTime>3-8_seconds</CaptureTime>
+            <ProgressIndicator>enabled</ProgressIndicator>
+            <StabilityWarning>enabled</StabilityWarning>
+            <PreviewEnhancement>real_time</PreviewEnhancement>
+        </UserInterface>
+        
+        <QualitySettings>
+            <OutputFormat>JPEG</OutputFormat>
+            <CompressionQuality>95</CompressionQuality>
+            <ColorSpace>sRGB</ColorSpace>
+            <BitDepth>8</BitDepth>
+        </QualitySettings>
+    </GlobalNightModeSettings>
+    
+</NightModeConfiguration>

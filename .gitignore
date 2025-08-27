@@ -1,0 +1,40 @@
+# Archivos de diagnóstico y testing
+DIAGNOSTICO_*.md
+ERRORES_*.md
+VERIFICACION_*.md
+*.log
+
+# Scripts de PowerShell para testing
+*.ps1
+
+# Herramientas de desarrollo
+platform-tools/
+adb.exe
+fastboot.exe
+
+# Archivos temporales
+*.tmp
+*.temp
+*.bak
+
+# Archivos del sistema Windows
+Thumbs.db
+desktop.ini
+
+# Archivos del sistema macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Archivos del sistema Linux
+*~
+.directory
+
+# Archivos de editor
+*.swp
+*.swo
+*~
+
+# Logs de instalación
+install_*.log
+magisk_*.log

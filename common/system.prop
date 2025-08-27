@@ -1,0 +1,49 @@
+# This file will be read by resetprop
+# Moto G71 5G specific system properties
+
+# Basic device identification
+ro.product.system.brand=motorola
+ro.product.system.device=corfur
+ro.product.system.manufacturer=motorola
+ro.product.system.model=moto g71 5G
+ro.product.system.name=corfur_retail
+ro.product.product.brand=motorola
+ro.product.product.manufacturer=motorola
+ro.product.product.model=moto g71 5G
+ro.product.product.name=corfur_retail
+ro.product.system_ext.brand=motorola
+ro.product.system_ext.device=corfur
+ro.product.system_ext.manufacturer=motorola
+ro.product.system_ext.model=moto g71 5G
+ro.product.system_ext.name=corfur_retail
+ro.product.model_for_attestation=moto g71 5G
+ro.product.brand_for_attestation=motorola
+ro.product.name_for_attestation=corfur_retail
+
+# Chipset properties (Snapdragon 695 5G)
+ro.soc.manufacturer=Qualcomm
+ro.soc.model=SM6375
+ro.board.platform=sm6375
+
+# GPU properties (Adreno 619)
+ro.hardware.egl=adreno
+ro.hardware.vulkan=adreno
+ro.opengles.version=196610
+
+# Display properties
+ro.sf.lcd_density=400
+
+# Camera properties
+ro.vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.motorola.camera2
+
+# 5G capabilities
+ro.telephony.default_network=33,33
+
+# Audio properties
+ro.vendor.audio.sdk.fluencetype=fluence
+
+# Performance optimizations
+ro.vendor.perf.scroll_opt=true
+
+# Thermal management
+persist.vendor.sys.thermal.enable=true

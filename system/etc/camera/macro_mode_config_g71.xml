@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Macro mode configuration for Moto G71 5G - OmniVision OV02B10 -->
+<MacroModeConfiguration>
+    
+    <SensorInfo>
+        <SensorName>omnivision_ov02b10</SensorName>
+        <CameraId>3</CameraId>
+        <Resolution>
+            <Width>1600</Width>
+            <Height>1200</Height>
+        </Resolution>
+        <PixelSize>1.75</PixelSize>
+        <Aperture>2.4</Aperture>
+        <FocalLength>1.77</FocalLength>
+    </SensorInfo>
+    
+    <!-- Focus Settings -->
+    <FocusSettings>
+        <MinFocusDistance>4</MinFocusDistance> <!-- cm -->
+        <OptimalFocusDistance>6</OptimalFocusDistance> <!-- cm -->
+        <MaxFocusDistance>10</MaxFocusDistance> <!-- cm -->
+        <FocusType>VCM</FocusType>
+        <FocusPrecision>high</FocusPrecision>
+        <FocusSpeed>slow</FocusSpeed>
+        <DepthOfField>shallow</DepthOfField>
+        
+        <AutoFocusSettings>
+            <AFAlgorithm>contrast_detection</AFAlgorithm>
+            <AFSearchRange>extended</AFSearchRange>
+            <AFStepSize>fine</AFStepSize>
+            <AFConvergenceThreshold>high</AFConvergenceThreshold>
+            <ContinuousAF>enabled</ContinuousAF>
+            <TouchToFocus>enabled</TouchToFocus>
+        </AutoFocusSettings>
+        
+        <FocusAssist>
+            <FocusPeaking>enabled</FocusPeaking>
+            <FocusZoom>2x</FocusZoom>
+            <DistanceIndicator>enabled</DistanceIndicator>
+            <FocusConfirmation>visual_audio</FocusConfirmation>
+        </FocusAssist>
+    </FocusSettings>
+    
+    <!-- Depth Detection -->
+    <DepthDetection>
+        <Enabled>true</Enabled>
+        <DepthAlgorithm>stereo_matching</DepthAlgorithm>
+        <DepthRange>
+            <Near>2</Near> <!-- cm -->
+            <Far>15</Far> <!-- cm -->
+        </DepthRange>
+        <DepthAccuracy>high</DepthAccuracy>
+        <DepthSmoothing>moderate</DepthSmoothing>
+        
+        <BackgroundBlur>
+            <Enabled>true</Enabled>
+            <BlurStrength>adaptive</BlurStrength>
+            <EdgePreservation>high</EdgePreservation>
+            <TransitionSmoothing>enabled</TransitionSmoothing>
+        </BackgroundBlur>
+    </DepthDetection>
+    
+    <!-- Illumination Settings -->
+    <IlluminationSettings>
+        <MacroFlash>
+            <Enabled>true</Enabled>
+            <FlashType>LED_ring</FlashType>
+            <FlashIntensity>adaptive</FlashIntensity>
+            <FlashDiffusion>soft</FlashDiffusion>
+            <AutoFlash>enabled</AutoFlash>
+        </MacroFlash>
+        
+        <AmbientLighting>
+            <LowLightCompensation>enabled</LowLightCompensation>
+            <ShadowFillLight>auto</ShadowFillLight>
+            <ContrastEnhancement>moderate</ContrastEnhancement>
+        </AmbientLighting>
+    </IlluminationSettings>
+    
+    <!-- Image Processing -->
+    <ImageProcessing>
+        <DetailEnhancement>
+            <Sharpening>
+                <Strength>high</Strength>
+                <Radius>1.5</Radius>
+                <Threshold>0.3</Threshold>
+                <AdaptiveSharpening>enabled</AdaptiveSharpening>
+            </Sharpening>
+            
+            <TextureEnhancement>
+                <Enabled>true</Enabled>
+                <Strength>moderate</Strength>
+                <PreserveNaturalness>true</PreserveNaturalness>
+            </TextureEnhancement>
+            
+            <MicroContrast>
+                <Enabled>true</Enabled>
+                <Strength>subtle</Strength>
+                <LocalAdaptation>enabled</LocalAdaptation>
+            </MicroContrast>
+        </DetailEnhancement>
+        
+        <ColorProcessing>
+            <Saturation>1.1</Saturation>
+            <Vibrance>1.05</Vibrance>
+            <ColorAccuracy>enhanced</ColorAccuracy>
+            <WhiteBalance>auto_fine</WhiteBalance>
+        </ColorProcessing>
+        
+        <NoiseReduction>
+            <Algorithm>edge_preserving</Algorithm>
+            <Strength>minimal</Strength>
+            <DetailPreservation>maximum</DetailPreservation>
+            <ChromaDenoising>subtle</ChromaDenoising>
+        </NoiseReduction>
+    </ImageProcessing>
+    
+    <!-- Stabilization -->
+    <Stabilization>
+        <DigitalStabilization>
+            <Enabled>true</Enabled>
+            <StabilizationStrength>high</StabilizationStrength>
+            <MotionCompensation>advanced</MotionCompensation>
+            <HandTremorCorrection>enabled</HandTremorCorrection>
+        </DigitalStabilization>
+        
+        <MotionDetection>
+            <Enabled>true</Enabled>
+            <Sensitivity>high</Sensitivity>
+            <StabilityWarning>enabled</StabilityWarning>
+            <CaptureDelay>adaptive</CaptureDelay>
+        </MotionDetection>
+    </Stabilization>
+    
+    <!-- Capture Settings -->
+    <CaptureSettings>
+        <CaptureMode>single_shot</CaptureMode>
+        <BracketingMode>focus_stacking</BracketingMode>
+        <FocusStackingFrames>5</FocusStackingFrames>
+        <ExposureBracketing>3_frames</ExposureBracketing>
+        
+        <TimerSettings>
+            <SelfTimer>2_seconds</SelfTimer>
+            <BulbMode>disabled</BulbMode>
+            <IntervalShooting>available</IntervalShooting>
+        </TimerSettings>
+        
+        <FileFormat>
+            <ImageFormat>JPEG</ImageFormat>
+            <Quality>95</Quality>
+            <ColorSpace>sRGB</ColorSpace>
+            <RAWCapture>available</RAWCapture>
+        </FileFormat>
+    </CaptureSettings>
+    
+    <!-- User Interface -->
+    <UserInterface>
+        <MacroModeIndicator>enabled</MacroModeIndicator>
+        <DistanceGuide>enabled</DistanceGuide>
+        <FocusAssistOverlay>enabled</FocusAssistOverlay>
+        <GridLines>rule_of_thirds</GridLines>
+        <Histogram>available</Histogram>
+        
+        <PreviewSettings>
+            <PreviewZoom>1.5x</PreviewZoom>
+            <PreviewEnhancement>real_time</PreviewEnhancement>
+            <FocusConfirmation>visual</FocusConfirmation>
+        </PreviewSettings>
+    </UserInterface>
+    
+    <!-- Performance Optimization -->
+    <PerformanceOptimization>
+        <GPUAcceleration>Adreno619</GPUAcceleration>
+        <DSPProcessing>Hexagon685</DSPProcessing>
+        <ParallelProcessing>enabled</ParallelProcessing>
+        <MemoryOptimization>enabled</MemoryOptimization>
+        <PowerOptimization>balanced</PowerOptimization>
+        
+        <ProcessingPipeline>
+            <RealTimeProcessing>enabled</RealTimeProcessing>
+            <PreviewOptimization>high_quality</PreviewOptimization>
+            <CaptureOptimization>maximum_quality</CaptureOptimization>
+        </ProcessingPipeline>
+    </PerformanceOptimization>
+    
+    <!-- Scene Detection -->
+    <SceneDetection>
+        <AutoSceneDetection>enabled</AutoSceneDetection>
+        <SupportedScenes>
+            <Scene name="flowers" optimization="color_enhancement"/>
+            <Scene name="insects" optimization="detail_enhancement"/>
+            <Scene name="jewelry" optimization="reflection_control"/>
+            <Scene name="food" optimization="color_warmth"/>
+            <Scene name="text" optimization="contrast_sharpness"/>
+            <Scene name="coins" optimization="texture_detail"/>
+        </SupportedScenes>
+        <SceneAdaptation>automatic</SceneAdaptation>
+    </SceneDetection>
+    
+</MacroModeConfiguration>

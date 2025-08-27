@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Camera configuration for Moto G71 5G (corfur) -->
+<CameraConfigurationRoot>
+    <CameraModuleConfig>
+        <CameraId>0</CameraId>
+        <SensorName>samsung_jn1</SensorName>
+        <ModuleName>main_camera</ModuleName>
+        <Position>BACK</Position>
+        
+        <!-- Main Camera - 50MP Samsung JN1 -->
+        <Properties>
+            <Resolution>
+                <Width>8160</Width>
+                <Height>6144</Height>
+                <MegaPixels>50</MegaPixels>
+            </Resolution>
+            <PixelSize>0.64</PixelSize>
+            <Aperture>1.8</Aperture>
+            <FocalLength>5.43</FocalLength>
+            <OpticalImageStabilization>true</OpticalImageStabilization>
+            <PhaseDetectionAutofocus>true</PhaseDetectionAutofocus>
+        </Properties>
+        
+        <Features>
+            <Feature name="night_mode" enabled="true"/>
+            <Feature name="portrait_mode" enabled="true"/>
+            <Feature name="hdr" enabled="true"/>
+            <Feature name="burst_mode" enabled="true"/>
+            <Feature name="video_stabilization" enabled="true"/>
+        </Features>
+        
+        <VideoCapabilities>
+            <MaxResolution>4K</MaxResolution>
+            <MaxFrameRate>30</MaxFrameRate>
+            <Stabilization>true</Stabilization>
+            <SlowMotion>120fps_1080p</SlowMotion>
+        </VideoCapabilities>
+    </CameraModuleConfig>
+    
+    <CameraModuleConfig>
+        <CameraId>1</CameraId>
+        <SensorName>samsung_s5k3p9</SensorName>
+        <ModuleName>front_camera</ModuleName>
+        <Position>FRONT</Position>
+        
+        <!-- Front Camera - 16MP Samsung S5K3P9 -->
+        <Properties>
+            <Resolution>
+                <Width>4656</Width>
+                <Height>3496</Height>
+                <MegaPixels>16</MegaPixels>
+            </Resolution>
+            <PixelSize>1.0</PixelSize>
+            <Aperture>2.2</Aperture>
+            <FocalLength>2.8</FocalLength>
+            <FixedFocus>false</FixedFocus>
+        </Properties>
+        
+        <Features>
+            <Feature name="portrait_mode" enabled="true"/>
+            <Feature name="beauty_mode" enabled="true"/>
+            <Feature name="hdr" enabled="true"/>
+            <Feature name="face_detection" enabled="true"/>
+        </Features>
+        
+        <VideoCapabilities>
+            <MaxResolution>1080p</MaxResolution>
+            <MaxFrameRate>30</MaxFrameRate>
+            <Stabilization>false</Stabilization>
+        </VideoCapabilities>
+    </CameraModuleConfig>
+    
+    <CameraModuleConfig>
+        <CameraId>2</CameraId>
+        <SensorName>omnivision_ov8856</SensorName>
+        <ModuleName>ultrawide_camera</ModuleName>
+        <Position>BACK</Position>
+        
+        <!-- Ultra Wide Camera - 8MP OmniVision OV8856 -->
+        <Properties>
+            <Resolution>
+                <Width>3264</Width>
+                <Height>2448</Height>
+                <MegaPixels>8</MegaPixels>
+            </Resolution>
+            <PixelSize>1.12</PixelSize>
+            <Aperture>2.2</Aperture>
+            <FocalLength>1.6</FocalLength>
+            <FieldOfView>118</FieldOfView>
+            <DistortionCorrection>true</DistortionCorrection>
+        </Properties>
+        
+        <Features>
+            <Feature name="wide_angle" enabled="true"/>
+            <Feature name="distortion_correction" enabled="true"/>
+            <Feature name="hdr" enabled="true"/>
+        </Features>
+        
+        <VideoCapabilities>
+            <MaxResolution>1080p</MaxResolution>
+            <MaxFrameRate>30</MaxFrameRate>
+            <Stabilization>false</Stabilization>
+        </VideoCapabilities>
+    </CameraModuleConfig>
+    
+    <CameraModuleConfig>
+        <CameraId>3</CameraId>
+        <SensorName>omnivision_ov02b10</SensorName>
+        <ModuleName>macro_camera</ModuleName>
+        <Position>BACK</Position>
+        
+        <!-- Macro Camera - 2MP OmniVision OV02B10 -->
+        <Properties>
+            <Resolution>
+                <Width>1600</Width>
+                <Height>1200</Height>
+                <MegaPixels>2</MegaPixels>
+            </Resolution>
+            <PixelSize>1.75</PixelSize>
+            <Aperture>2.4</Aperture>
+            <FocalLength>1.77</FocalLength>
+            <MinFocusDistance>4</MinFocusDistance>
+            <MacroMode>true</MacroMode>
+        </Properties>
+        
+        <Features>
+            <Feature name="macro_mode" enabled="true"/>
+            <Feature name="close_focus" enabled="true"/>
+            <Feature name="depth_detection" enabled="true"/>
+        </Features>
+        
+        <VideoCapabilities>
+            <MaxResolution>1080p</MaxResolution>
+            <MaxFrameRate>30</MaxFrameRate>
+            <Stabilization>false</Stabilization>
+        </VideoCapabilities>
+    </CameraModuleConfig>
+    
+    <!-- Global Camera Settings -->
+    <GlobalSettings>
+        <ChipsetOptimization>SM6375</ChipsetOptimization>
+        <GPUAcceleration>Adreno619</GPUAcceleration>
+        <ImageProcessingEngine>Spectra340</ImageProcessingEngine>
+        <MaxConcurrentCameras>2</MaxConcurrentCameras>
+        <DefaultHDRMode>auto</DefaultHDRMode>
+        <DefaultNightMode>auto</DefaultNightMode>
+    </GlobalSettings>
+</CameraConfigurationRoot>

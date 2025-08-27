@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Camera features and permissions for Moto G71 5G -->
+<permissions>
+    
+    <!-- Basic Camera Features -->
+    <feature name="android.hardware.camera" />
+    <feature name="android.hardware.camera.autofocus" />
+    <feature name="android.hardware.camera.flash" />
+    <feature name="android.hardware.camera.front" />
+    <feature name="android.hardware.camera.any" />
+    
+    <!-- Advanced Camera Features -->
+    <feature name="android.hardware.camera.level.full" />
+    <feature name="android.hardware.camera.capability.manual_sensor" />
+    <feature name="android.hardware.camera.capability.manual_post_processing" />
+    <feature name="android.hardware.camera.capability.raw" />
+    
+    <!-- Multi-Camera Support -->
+    <feature name="android.hardware.camera.concurrent" />
+    
+    <!-- Moto G71 5G Specific Features -->
+    <feature name="com.motorola.camera.night_mode" />
+    <feature name="com.motorola.camera.portrait_mode" />
+    <feature name="com.motorola.camera.macro_mode" />
+    <feature name="com.motorola.camera.ultrawide" />
+    <feature name="com.motorola.camera.ois" />
+    <feature name="com.motorola.camera.pdaf" />
+    
+    <!-- Video Recording Features -->
+    <feature name="android.hardware.camera.capability.video_stabilization" />
+    <feature name="android.hardware.camera.capability.slow_motion" />
+    <feature name="android.software.picture_in_picture" />
+    
+    <!-- Image Processing Features -->
+    <feature name="android.hardware.camera.capability.burst" />
+    <feature name="android.hardware.camera.capability.hdr" />
+    <feature name="android.hardware.camera.capability.noise_reduction" />
+    
+    <!-- Hardware Acceleration -->
+    <feature name="com.qualcomm.spectra.340" />
+    <feature name="com.qualcomm.adreno.619" />
+    <feature name="com.qualcomm.sm6375.camera" />
+    
+    <!-- 5G Related Camera Features -->
+    <feature name="com.motorola.camera.5g_streaming" />
+    <feature name="com.motorola.camera.cloud_processing" />
+    
+</permissions>

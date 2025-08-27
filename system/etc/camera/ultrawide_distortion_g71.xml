@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Ultra wide distortion correction for Moto G71 5G - OmniVision OV8856 -->
+<UltraWideDistortionCorrection>
+    
+    <SensorInfo>
+        <SensorName>omnivision_ov8856</SensorName>
+        <CameraId>2</CameraId>
+        <Resolution>
+            <Width>3264</Width>
+            <Height>2448</Height>
+        </Resolution>
+        <FieldOfView>118</FieldOfView>
+        <FocalLength>1.6</FocalLength>
+        <PixelSize>1.12</PixelSize>
+    </SensorInfo>
+    
+    <!-- Geometric Distortion Correction -->
+    <GeometricCorrection>
+        <DistortionModel>brown_conrady</DistortionModel>
+        <RadialDistortion>
+            <K1>-0.2845</K1>
+            <K2>0.0912</K2>
+            <K3>-0.0123</K3>
+        </RadialDistortion>
+        <TangentialDistortion>
+            <P1>0.0008</P1>
+            <P2>-0.0012</P2>
+        </TangentialDistortion>
+        <PrincipalPoint>
+            <Cx>1632.5</Cx>
+            <Cy>1224.0</Cy>
+        </PrincipalPoint>
+        <FocalLengthPixels>
+            <Fx>1456.8</Fx>
+            <Fy>1456.8</Fy>
+        </FocalLengthPixels>
+    </GeometricCorrection>
+    
+    <!-- Vignetting Correction -->
+    <VignettingCorrection>
+        <Enabled>true</Enabled>
+        <CorrectionStrength>moderate</CorrectionStrength>
+        <VignettingModel>polynomial</VignettingModel>
+        <Coefficients>
+            <A0>1.0</A0>
+            <A1>-0.15</A1>
+            <A2>0.08</A2>
+            <A3>-0.02</A3>
+        </Coefficients>
+        <CenterPoint>
+            <X>1632</X>
+            <Y>1224</Y>
+        </CenterPoint>
+        <MaxRadius>2040</MaxRadius>
+    </VignettingCorrection>
+    
+    <!-- Chromatic Aberration Correction -->
+    <ChromaticAberrationCorrection>
+        <Enabled>true</Enabled>
+        <RedChannel>
+            <ScaleX>1.002</ScaleX>
+            <ScaleY>1.002</ScaleY>
+        </RedChannel>
+        <GreenChannel>
+            <ScaleX>1.000</ScaleX>
+            <ScaleY>1.000</ScaleY>
+        </GreenChannel>
+        <BlueChannel>
+            <ScaleX>0.998</ScaleX>
+            <ScaleY>0.998</ScaleY>
+        </BlueChannel>
+    </ChromaticAberrationCorrection>
+    
+    <!-- Edge Enhancement -->
+    <EdgeEnhancement>
+        <Enabled>true</Enabled>
+        <Strength>moderate</Strength>
+        <PreservationRadius>0.8</PreservationRadius>
+        <FalloffRate>smooth</FalloffRate>
+        <AdaptiveStrength>true</AdaptiveStrength>
+    </EdgeEnhancement>
+    
+    <!-- Processing Optimization -->
+    <ProcessingOptimization>
+        <GPUAcceleration>Adreno619</GPUAcceleration>
+        <ParallelProcessing>enabled</ParallelProcessing>
+        <MemoryOptimization>aggressive</MemoryOptimization>
+        <RealTimePreview>enabled</RealTimePreview>
+        <CacheOptimization>enabled</CacheOptimization>
+    </ProcessingOptimization>
+    
+    <!-- Quality Settings -->
+    <QualitySettings>
+        <CorrectionQuality>high</CorrectionQuality>
+        <InterpolationMethod>bicubic</InterpolationMethod>
+        <AntiAliasing>enabled</AntiAliasing>
+        <NoiseReduction>minimal</NoiseReduction>
+        <SharpnessEnhancement>subtle</SharpnessEnhancement>
+    </QualitySettings>
+    
+    <!-- Calibration Data -->
+    <CalibrationData>
+        <CalibrationDate>2024-01-15</CalibrationDate>
+        <CalibrationEnvironment>laboratory</CalibrationEnvironment>
+        <TemperatureCompensation>enabled</TemperatureCompensation>
+        <ValidationStatus>verified</ValidationStatus>
+        <AccuracyMetrics>
+            <GeometricAccuracy>0.5_pixels</GeometricAccuracy>
+            <ColorAccuracy>delta_e_2.0</ColorAccuracy>
+            <EdgePreservation>95_percent</EdgePreservation>
+        </AccuracyMetrics>
+    </CalibrationData>
+    
+    <!-- Scene-Specific Adjustments -->
+    <SceneAdjustments>
+        <Landscape>
+            <DistortionStrength>full</DistortionStrength>
+            <VignettingStrength>moderate</VignettingStrength>
+            <EdgeEnhancement>enhanced</EdgeEnhancement>
+        </Landscape>
+        <Architecture>
+            <DistortionStrength>aggressive</DistortionStrength>
+            <VignettingStrength>full</VignettingStrength>
+            <EdgeEnhancement>high</EdgeEnhancement>
+            <PerspectiveCorrection>enabled</PerspectiveCorrection>
+        </Architecture>
+        <Group_Photo>
+            <DistortionStrength>moderate</DistortionStrength>
+            <VignettingStrength>moderate</VignettingStrength>
+            <EdgeEnhancement>minimal</EdgeEnhancement>
+            <FacePreservation>enabled</FacePreservation>
+        </Group_Photo>
+        <Night_Mode>
+            <DistortionStrength>moderate</DistortionStrength>
+            <VignettingStrength>aggressive</VignettingStrength>
+            <EdgeEnhancement>adaptive</EdgeEnhancement>
+            <NoiseAwareCorrection>enabled</NoiseAwareCorrection>
+        </Night_Mode>
+    </SceneAdjustments>
+    
+</UltraWideDistortionCorrection>

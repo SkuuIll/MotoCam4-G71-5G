@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Sensor calibration data for Moto G71 5G cameras -->
+<SensorCalibrationRoot>
+    
+    <!-- Main Camera Calibration - Samsung JN1 50MP -->
+    <SensorCalibration sensor="samsung_jn1" camera_id="0">
+        <OpticalCenter>
+            <X>4080</X>
+            <Y>3072</Y>
+        </OpticalCenter>
+        
+        <LensShading>
+            <RedGain>1.0</RedGain>
+            <GreenGain>1.0</GreenGain>
+            <BlueGain>1.0</BlueGain>
+            <VignettingCorrection>true</VignettingCorrection>
+        </LensShading>
+        
+        <ColorCorrection>
+            <WhiteBalance>
+                <D65>
+                    <RGain>1.45</RGain>
+                    <BGain>1.78</BGain>
+                </D65>
+                <A>
+                    <RGain>1.12</RGain>
+                    <BGain>2.34</BGain>
+                </A>
+                <TL84>
+                    <RGain>1.34</RGain>
+                    <BGain>1.89</BGain>
+                </TL84>
+            </WhiteBalance>
+        </ColorCorrection>
+        
+        <AutoFocus>
+            <Type>PDAF</Type>
+            <Range>
+                <Near>10</Near>
+                <Far>infinity</Far>
+            </Range>
+            <Speed>fast</Speed>
+        </AutoFocus>
+        
+        <NoiseReduction>
+            <LowLight>aggressive</LowLight>
+            <Normal>moderate</Normal>
+            <Bright>minimal</Bright>
+        </NoiseReduction>
+    </SensorCalibration>
+    
+    <!-- Front Camera Calibration - Samsung S5K3P9 16MP -->
+    <SensorCalibration sensor="samsung_s5k3p9" camera_id="1">
+        <OpticalCenter>
+            <X>2328</X>
+            <Y>1748</Y>
+        </OpticalCenter>
+        
+        <LensShading>
+            <RedGain>1.0</RedGain>
+            <GreenGain>1.0</GreenGain>
+            <BlueGain>1.0</BlueGain>
+            <VignettingCorrection>true</VignettingCorrection>
+        </LensShading>
+        
+        <ColorCorrection>
+            <WhiteBalance>
+                <D65>
+                    <RGain>1.42</RGain>
+                    <BGain>1.81</BGain>
+                </D65>
+                <A>
+                    <RGain>1.08</RGain>
+                    <BGain>2.41</BGain>
+                </A>
+            </WhiteBalance>
+        </ColorCorrection>
+        
+        <AutoFocus>
+            <Type>Fixed</Type>
+            <Range>
+                <Near>30</Near>
+                <Far>infinity</Far>
+            </Range>
+        </AutoFocus>
+        
+        <BeautyMode>
+            <SkinSmoothing>moderate</SkinSmoothing>
+            <EyeEnhancement>subtle</EyeEnhancement>
+            <FaceSlimming>minimal</FaceSlimming>
+        </BeautyMode>
+    </SensorCalibration>
+    
+    <!-- Ultra Wide Camera Calibration - OmniVision OV8856 8MP -->
+    <SensorCalibration sensor="omnivision_ov8856" camera_id="2">
+        <OpticalCenter>
+            <X>1632</X>
+            <Y>1224</Y>
+        </OpticalCenter>
+        
+        <DistortionCorrection>
+            <K1>-0.2845</K1>
+            <K2>0.0912</K2>
+            <K3>-0.0123</K3>
+            <P1>0.0008</P1>
+            <P2>-0.0012</P2>
+        </DistortionCorrection>
+        
+        <LensShading>
+            <RedGain>1.0</RedGain>
+            <GreenGain>1.0</GreenGain>
+            <BlueGain>1.0</BlueGain>
+            <VignettingCorrection>true</VignettingCorrection>
+            <EdgeFalloff>compensated</EdgeFalloff>
+        </LensShading>
+        
+        <ColorCorrection>
+            <WhiteBalance>
+                <D65>
+                    <RGain>1.38</RGain>
+                    <BGain>1.92</BGain>
+                </D65>
+                <A>
+                    <RGain>1.05</RGain>
+                    <BGain>2.58</BGain>
+                </A>
+            </WhiteBalance>
+        </ColorCorrection>
+        
+        <FieldOfView>
+            <Horizontal>118</Horizontal>
+            <Vertical>89</Vertical>
+            <Diagonal>130</Diagonal>
+        </FieldOfView>
+    </SensorCalibration>
+    
+    <!-- Macro Camera Calibration - OmniVision OV02B10 2MP -->
+    <SensorCalibration sensor="omnivision_ov02b10" camera_id="3">
+        <OpticalCenter>
+            <X>800</X>
+            <Y>600</Y>
+        </OpticalCenter>
+        
+        <MacroSettings>
+            <MinFocusDistance>4</MinFocusDistance>
+            <OptimalDistance>6</OptimalDistance>
+            <MaxFocusDistance>10</MaxFocusDistance>
+            <DepthOfField>shallow</DepthOfField>
+        </MacroSettings>
+        
+        <LensShading>
+            <RedGain>1.0</RedGain>
+            <GreenGain>1.0</GreenGain>
+            <BlueGain>1.0</BlueGain>
+            <VignettingCorrection>moderate</VignettingCorrection>
+        </LensShading>
+        
+        <ColorCorrection>
+            <WhiteBalance>
+                <D65>
+                    <RGain>1.41</RGain>
+                    <BGain>1.85</BGain>
+                </D65>
+                <A>
+                    <RGain>1.11</RGain>
+                    <BGain>2.29</BGain>
+                </A>
+            </WhiteBalance>
+        </ColorCorrection>
+        
+        <AutoFocus>
+            <Type>VCM</Type>
+            <Range>
+                <Near>4</Near>
+                <Far>10</Far>
+            </Range>
+            <Speed>slow</Speed>
+            <Precision>high</Precision>
+        </AutoFocus>
+    </SensorCalibration>
+    
+</SensorCalibrationRoot>
